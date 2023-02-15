@@ -2,11 +2,28 @@ export default `
 query($userLogin: String!) {
   user: repositoryOwner(login: $userLogin) {
     repositories(
-      first: 100
+      last: 100
       ownerAffiliations: OWNER
     ) {
       nodes {
         name
+        issues(last: 20) {
+          edges {
+            node {
+              title
+              state
+              bodyText
+              comments(last: 20) {
+                edges {
+                  node {
+                    bodyText
+                    createdAt
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     } 
   } 
