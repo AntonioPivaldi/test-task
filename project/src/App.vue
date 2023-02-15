@@ -1,8 +1,12 @@
 <template>
   <div class="wrapper">
-    <Header />
-    <RouterView />
-    <Footer />
+    <div class="upper">
+      <Header />
+      <RouterView />
+    </div>
+    <div class="lower">
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -19,12 +23,13 @@ import Footer from "./components/Footer.vue";
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
+  justify-content: space-between;
+  height: 100%;
   padding: 1rem;
+}
 
-  &:last-child {
-    justify-self: end;
-  }
+.lower {
+  padding: 1rem 0;
 }
 </style>
 

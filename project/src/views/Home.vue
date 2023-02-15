@@ -225,9 +225,9 @@ export default {
   }
 }
 
-.message {
-  margin-bottom: 80%;
-}
+// .message {
+//   margin-bottom: 75vh;
+// }
 
 .issue {
   margin: 1rem 0;
