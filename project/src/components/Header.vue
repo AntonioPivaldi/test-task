@@ -1,16 +1,17 @@
 <template>
   <header>
-    <nav>
-      <router-link
-        v-for="route of this.$router.getRoutes()"
-        :key="route.name"
-        :to="route.path"
-      >
-        {{ route.name }}
-      </router-link>
-    </nav>
+    <h1>
+      Repositories of: <i>{{ getUser }}</i>
+    </h1>
   </header>
 </template>
 
 <script>
+export default {
+  computed: {
+    getUser() {
+      return this.$store.getters.getUser;
+    },
+  },
+};
 </script>

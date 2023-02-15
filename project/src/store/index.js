@@ -4,8 +4,8 @@ import query from './queries/query'
 const store = createStore({
   actions: {},
   mutations: {
-    setUser(state) {
-      state.userLogin
+    setUser(state, login) {
+      state.userLogin = login;
     }
   },
   state() {
@@ -20,7 +20,7 @@ const store = createStore({
     },
     getQuery(state) {
       return state.query;
-    }
+    },
   },
 })
 
