@@ -18,6 +18,9 @@ query($userLogin: String!) {
                   node {
                     bodyText
                     createdAt
+                    author {
+                      login
+                    }
                   }
                 }
               }

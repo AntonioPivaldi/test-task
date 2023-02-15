@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Header />
     <RouterView />
   </div>
@@ -13,5 +13,10 @@ import Header from "./components/Header.vue";
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
+.wrapper {
+  max-width: 1600px;
+  padding: 1rem;
+}
 </style>
+
