@@ -106,7 +106,7 @@ export default {
       baseUrl: "https://api.github.com/graphql",
       res: null,
       resLoaded: false,
-      token: "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",
+      token: import.meta.env.VITE_TOKEN,
       chosen: undefined,
       options: [],
       newUserLogin: null,
@@ -180,6 +180,9 @@ export default {
   },
   beforeMount() {
     this.getRes();
+  },
+  mounted() {
+    console.log(this.token);
   },
 };
 </script>
