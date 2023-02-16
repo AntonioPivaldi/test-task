@@ -181,9 +181,6 @@ export default {
   beforeMount() {
     this.getRes();
   },
-  mounted() {
-    console.log(this.token);
-  },
 };
 </script>
 
