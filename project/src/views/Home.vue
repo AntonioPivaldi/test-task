@@ -106,7 +106,7 @@ export default {
       baseUrl: "https://api.github.com/graphql",
       res: null,
       resLoaded: false,
-      token: "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",
+      token: "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",
       chosen: undefined,
       options: [],
       newUserLogin: null,
@@ -224,10 +224,6 @@ export default {
     }
   }
 }
-
-// .message {
-//   margin-bottom: 75vh;
-// }
 
 .issue {
   margin: 1rem 0;
