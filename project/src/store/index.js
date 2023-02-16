@@ -25,3 +25,16 @@ const store = createStore({
 })
 
 export default store;
+
+/* Hey there. I really really don't understand why 
+I must use VueX storage here. It's simple and small
+"app", no need of VueX, I guess. 
+
+If you are reading this, please, give me a feedback 
+about this work, I will appreciate it.
+
+- Email: 9212565@gmail.com;
+
+- Discord: https://discordapp.com/users/635529058423275563;
+
+Thank you, have a noice day. */
