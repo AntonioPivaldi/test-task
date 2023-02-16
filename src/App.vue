@@ -14,8 +14,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import router from "./router/index.js";
 import store from "./store/index.js";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import { Header, Footer } from "./components";
 </script>
 
 
